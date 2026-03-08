@@ -5,7 +5,7 @@
 
 
 // ESP32C3/S3 I2S is not supported yet due to significant changes to interface
-#if !defined(CONFIG_IDF_TARGET_ESP32S3) && !defined(CONFIG_IDF_TARGET_ESP32C3)
+#if !defined(CONFIG_IDF_TARGET_ESP32C3)
 
 #ifdef __cplusplus
 extern "C" {

@@ -23,7 +23,7 @@
 #include "stdlib.h"
 
 // ESP32 C3, S3, C6, and H2 I2S is not supported yet due to significant changes to interface
-#if !defined(CONFIG_IDF_TARGET_ESP32C3) && !defined(CONFIG_IDF_TARGET_ESP32S3) && !defined(CONFIG_IDF_TARGET_ESP32C6) && !defined(CONFIG_IDF_TARGET_ESP32H2)
+#if !defined(CONFIG_IDF_TARGET_ESP32C3) && !defined(CONFIG_IDF_TARGET_ESP32C6) && !defined(CONFIG_IDF_TARGET_ESP32H2)
 
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
@@ -57,10 +57,7 @@
 #include "esp_private/periph_ctrl.h"
 #endif
 
-#if !defined(CONFIG_IDF_TARGET_ESP32S3)
 #include "driver/dac.h"
-#endif
-
 
 
 #include "Esp32_i2s.h"
