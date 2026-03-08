@@ -57,7 +57,10 @@
 #include "esp_private/periph_ctrl.h"
 #endif
 
+#if !defined(CONFIG_IDF_TARGET_ESP32S3)
 #include "driver/dac.h"
+#endif
+
 
 
 #include "Esp32_i2s.h"
